@@ -9,7 +9,7 @@ export default function SearchBar({ onSearch }) {
   }
   return (
     <div>
-      <input id="search" />
+      <input id="search" placeholder="Search"/>
       <button onClick={handleOnSearch}>Add city</button>
     </div>
   );

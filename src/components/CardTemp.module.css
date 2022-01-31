@@ -1,0 +1,11 @@
+.temp {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.temp + .temp{
+    margin-left: 0.8rem;
+}

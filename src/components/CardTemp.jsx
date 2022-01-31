@@ -1,8 +1,10 @@
+import styles from "./CardTemp.module.css"
+
 function CardTemp({ label, value }) {
   return (
-    <div>
+    <div className={styles.temp} >
       <label>{label}</label>
-      <span>{value}</span>
+      <span>{value}°</span>
     </div>
   );
 }

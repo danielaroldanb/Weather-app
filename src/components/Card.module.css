@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  color: #ffffff;
+  height: 25vh;
+}
+
+.temps {
+  display: flex;
+}
+.primary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 15vh;
+  width: 20rem;
+  padding: 0 0.5rem;
+}
+
+.primary > span {
+  margin-top: 0.5rem;
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.card + .card {
+  border-left: solid 1px #ffffff60;
+}
+
+.card > img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.primary > img {
+  width: 9rem;
+  height: 9rem;
+}
+
+.name {
+  background-color: #00000060;
+  padding: 0.1rem 0.85rem;
+  border-radius: 50px;
+}
