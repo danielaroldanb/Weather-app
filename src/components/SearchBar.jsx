@@ -15,7 +15,7 @@ export default function SearchBar({ onSearch }) {
   return (
     <div className={styles.search}>
       <input
-        placeholder="Add city"
+        placeholder="Add cities"
         autoComplete="off"
         className={styles.input}
         value={search}

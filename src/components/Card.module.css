@@ -42,6 +42,8 @@
   background-color: #00000060;
   padding: 0.1rem 0.85rem;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .btn {

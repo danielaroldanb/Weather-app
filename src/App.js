@@ -10,10 +10,13 @@ function App() {
   const [data, setData] = useState([]);
 
   function onSearch(city) {
-    if (data.length > 3) {
-      alert("You can see maximum 4 cities");
+
+
+    if (data.length > 4) {
+      alert("You can see maximum 5 cities");
     } else {
       fetchCity(city,setData)
+      
     }
   }
 
@@ -30,7 +33,7 @@ function App() {
         <div>
           <SearchBar onSearch={onSearch} />
         </div>
-        <div className={styles.citiesContainer}>
+        <div  className={data.length>0? styles.citiesContainer:styles.emptyContainer}>
           {data.length > 0 && (
             <Card
               primary

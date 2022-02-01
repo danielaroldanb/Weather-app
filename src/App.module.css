@@ -22,12 +22,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: 53vh 25vh;
 }
+
+
+
 .citiesContainer {
   background-color: #ffffff60;
   display: flex;
   justify-content: space-between;
   height: 25vh;
   backdrop-filter: blur(7px);
+}
+
+.emptyContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 25vh;
+ 
 }
 
 .app,

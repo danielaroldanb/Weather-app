@@ -1,6 +1,4 @@
-.cards{
-    display: flex;
-    text-overflow: ellipsis;
- white-space: nowrap;
- overflow: hidden;
+.cards {
+  display: flex;
+  justify-content: space-between;
 }
