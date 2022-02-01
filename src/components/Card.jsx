@@ -9,14 +9,15 @@ export default function Card({ max, min, name, img, onClose, primary }) {
 
   return (
     <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
-      <button style={{ display: "none" }} onClick={handleOnclose}>
-        X
-      </button>
-      <span className={styles.name}>{name} </span>{" "}
+      <span className={styles.name}>
+        {name} {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}
+      </span>
+
       <img
         src={`http://openweathermap.org/img/wn/${img}@2x.png`}
         alt="weather icon"
       />
+
       <div className={styles.temps}>
         <CardTemp label="Min:" value={min} />
         <CardTemp label="Max:" value={max} />

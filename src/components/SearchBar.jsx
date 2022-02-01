@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./SearchBar.module.css";
+import { WiDayCloudyGusts } from "react-icons/wi";
 
 export default function SearchBar({ onSearch }) {
   function handleOnSearch() {
@@ -8,9 +10,11 @@ export default function SearchBar({ onSearch }) {
     }
   }
   return (
-    <div>
-      <input id="search" placeholder="Search"/>
-      <button onClick={handleOnSearch}>Add city</button>
+    <div className={styles.search} >
+      <input id="search" placeholder="Add city" className={styles.input} />
+      <button onClick={handleOnSearch} className={styles.btn} >
+        <WiDayCloudyGusts />
+      </button>
     </div>
   );
 }
