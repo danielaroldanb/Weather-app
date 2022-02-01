@@ -3,7 +3,7 @@ import styles from "./SearchBar.module.css";
 import { WiDayCloudyGusts } from "react-icons/wi";
 
 export default function SearchBar({ onSearch }) {
-  const [search, setsearch] = React.useState("");
+  const [search, setsearch] = useState("");
 
   function handleOnSearch() {
     if (typeof onSearch === "function") {
