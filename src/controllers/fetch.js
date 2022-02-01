@@ -20,7 +20,7 @@ export default function fetchCity(city,setData){
               latitude: response.coord.lat,
               longitude: response.coord.lon,
             };
-            setData(oldCities => oldCities.filter(c => c.id !== city.id));
+            // setData(oldCities => oldCities.filter(c => c.id !== city.id));
             setData((oldCities) => [...oldCities, city]);
           } else {
             alert("City not found");
