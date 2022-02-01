@@ -33,7 +33,7 @@ function App() {
         <div>
           <SearchBar onSearch={onSearch} />
         </div>
-        <div  className={ styles.citiesContainer}>
+        <div  className={data.length>0? styles.citiesContainer:styles.emptyContainer}>
           {data.length > 0 && (
             <Card
               primary
