@@ -5,18 +5,16 @@ import SearchBar from "./components/SearchBar.jsx";
 import styles from "./App.module.css";
 import { useState } from "react";
 import fetchCity from "./controllers/fetch.js";
+import fetchCoords from "./controllers/fetchLocation.js";
 
 function App() {
   const [data, setData] = useState([]);
 
   function onSearch(city) {
-
-
     if (data.length > 4) {
       alert("You can see maximum 5 cities");
     } else {
-      fetchCity(city,setData)
-      
+      fetchCity(city, setData);
     }
   }
 
@@ -26,6 +24,13 @@ function App() {
     });
   }
 
+  React.useEffect(() => {
+    if (navigator.geolocation)
+      navigator.geolocation.getCurrentPosition((pos) => {
+        fetchCoords(pos.coords.latitude, pos.coords.longitude, setData);
+      });
+  }, []);
+
   return (
     <div className={styles.app}>
       <div className={styles.bkg} />
@@ -33,7 +38,11 @@ function App() {
         <div>
           <SearchBar onSearch={onSearch} />
         </div>
-        <div  className={data.length>0? styles.citiesContainer:styles.emptyContainer}>
+        <div
+          className={
+            data.length > 0 ? styles.citiesContainer : styles.emptyContainer
+          }
+        >
           {data.length > 0 && (
             <Card
               primary
