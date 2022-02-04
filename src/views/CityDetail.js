@@ -14,7 +14,7 @@ function CityDetail() {
 
   return (
     <div className={styles.city}>
-       <button onClick={() => navigate(-1)}>Go back</button>
+      <button onClick={() => navigate(-1)}>Go back</button>
       {city === undefined && <h2>Loading...</h2>}
       {city === null && <h2>City not found</h2>}
       {city && (
@@ -24,24 +24,37 @@ function CityDetail() {
             <span>{city.name}</span>
           </div>
           <div className={styles.info}>
-            <label>temp_min: </label>
-            <span>{city.min}</span>
-          </div>
-          <div className={styles.info}>
-            <label>temp_max: </label>
-            <span>{city.max}</span>
-          </div>
-          <div className={styles.info}>
-            <label>wind: </label>
-            <span>{city.wind}</span>
-          </div>
-          <div className={styles.info}>
-            <label>clouds: </label>
-            <span>{city.clouds}</span>
-          </div>
-          <div className={styles.info}>
-            <label>weather: </label>
+            <label>Weather: </label>
             <span>{city.weather}</span>
+          </div>
+          <div className={styles.info}>
+            <label>Minimum temperature: </label>
+            <span>{city.min} °C</span>
+          </div>
+          <div className={styles.info}>
+            <label>Maximum temperature: </label>
+            <span>{city.max} °C</span>
+          </div>
+          <div className={styles.info}>
+            <label>Thermal sensation: </label>
+            <span>{city.termalSense} °C</span>
+          </div>
+          <div className={styles.info}>
+            <label>Humidity: </label>
+            <span>{city.humidity}%</span>
+          </div>
+          <div className={styles.info}>
+            <label>Wind: </label>
+            <span>{city.wind} m/s NE</span>
+          </div>
+          <div className={styles.info}>
+            <label>Clouds: </label>
+            <span>{city.clouds}%</span>
+          </div>
+
+          <div className={styles.info}>
+            <label>Pressure: </label>
+            <span>{city.pressure} hPa</span>
           </div>
         </div>
       )}

@@ -19,6 +19,9 @@ export default function fetchDetail(id, setData) {
           clouds: response.clouds.all,
           latitude: response.coord.lat,
           longitude: response.coord.lon,
+          termalSense: Math.round(response.main.feels_like),
+          pressure: response.main.pressure,
+          humidity: response.main.humidity,
         };
         if (city) setData(city);
       } else {

@@ -9,6 +9,7 @@ export default function Cities({data,onSearch,handleOnClose}) {
  <div>
       <div>
         <SearchBar onSearch={onSearch} />
+  
       </div>
       <div
         className={
@@ -18,6 +19,7 @@ export default function Cities({data,onSearch,handleOnClose}) {
         {data.length > 0 && (
           <Card
             primary
+            cityId={data[data.length - 1].id}
             max={data[data.length - 1].max}
             min={data[data.length - 1].min}
             name={data[data.length - 1].name}

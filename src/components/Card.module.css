@@ -5,7 +5,7 @@
   align-items: center;
   width: 10rem;
   color: #ffffff;
-  height: 25vh;
+  height: 26vh;
 }
 
 .temps {
@@ -30,8 +30,8 @@
 }
 
 .card > img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 .primary > img {
   width: 9rem;
@@ -40,7 +40,7 @@
 
 .name {
   background-color: #00000060;
-  padding: 0.1rem 0.85rem;
+  padding: 0.1rem 0.9rem;
   border-radius: 50px;
   display: flex;
   align-items: center;

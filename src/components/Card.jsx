@@ -10,8 +10,8 @@ export default function Card({ max, min, name, img, onClose, primary,cityId }) {
 
   return (
     <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
-      <span>   <Link to={`/city/${cityId}`} className={styles.name}>
-        {name} </Link> {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}
+      <span   className={styles.name}>
+        {name} {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}
       </span>
 
       <img
@@ -23,6 +23,7 @@ export default function Card({ max, min, name, img, onClose, primary,cityId }) {
         <CardTemp label="Min:" value={min} />
         <CardTemp label="Max:" value={max} />
       </div>
+     {!primary && <Link to={`/city/${cityId}`}>Details...</Link>}
     </div>
   );
 }
