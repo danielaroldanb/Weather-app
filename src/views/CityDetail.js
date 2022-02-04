@@ -29,11 +29,11 @@ function CityDetail() {
             <span>{city.weather}</span>
           </div>
           <div className={styles.info}>
-            <label>Minimum temperature: </label>
+            <label>Min temperature: </label>
             <span>{city.min} °C</span>
           </div>
           <div className={styles.info}>
-            <label>Maximum temperature: </label>
+            <label>Max temperature: </label>
             <span>{city.max} °C</span>
           </div>
           <div className={styles.info}>
