@@ -35,8 +35,9 @@ function App() {
 
   return (
     <div className={styles.app}>
+      
       <div className={styles.bkg} />
-    
+ 
       <div className={styles.container}>
         
         <Routes>
@@ -53,8 +54,9 @@ function App() {
           />
 
           <Route path="/city/:id" element={<CityDetail />} />
-          <Route path="/about" exact element={<Nav/>} />
+          <Route path="/about" exact element={<About />} />
         </Routes>
+     
       </div>
     </div>
   );

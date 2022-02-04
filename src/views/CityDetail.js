@@ -14,13 +14,14 @@ function CityDetail() {
 
   return (
     <div className={styles.city}>
-      <button onClick={() => navigate(-1)}>Go back</button>
+      <button className={styles.button} onClick={() => navigate(-1)}>
+        Go back
+      </button>
       {city === undefined && <h2>Loading...</h2>}
       {city === null && <h2>City not found</h2>}
       {city && (
         <div className={styles.detail}>
-          <div className={styles.info}>
-            <label>City: </label>
+          <div className={styles.title}>
             <span>{city.name}</span>
           </div>
           <div className={styles.info}>
@@ -45,7 +46,7 @@ function CityDetail() {
           </div>
           <div className={styles.info}>
             <label>Wind: </label>
-            <span>{city.wind} m/s NE</span>
+            <span>{city.wind} m/s</span>
           </div>
           <div className={styles.info}>
             <label>Clouds: </label>
