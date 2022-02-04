@@ -7,7 +7,6 @@ import fetchCoords from "./controllers/fetchLocation.js";
 import Cities from "./views/Cities";
 import CityDetail from "./views/CityDetail";
 import About from "./views/About";
-import Nav from "./components/Nav";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,11 +34,11 @@ function App() {
 
   return (
     <div className={styles.app}>
-      
+
       <div className={styles.bkg} />
- 
+     
       <div className={styles.container}>
-        
+
         <Routes>
           <Route
             path="/"
@@ -54,10 +53,11 @@ function App() {
           />
 
           <Route path="/city/:id" element={<CityDetail />} />
-          <Route path="/about" exact element={<About />} />
+          <Route path="/about"  element={<About />} />
         </Routes>
-     
+        
       </div>
+    
     </div>
   );
 }

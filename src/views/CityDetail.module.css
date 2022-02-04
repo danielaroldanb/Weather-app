@@ -37,13 +37,14 @@
 .info > label {
   color: white;
   font-weight: 700;
+  margin-left: 1%;
 }
 
 .info > span {
   text-align: right;
   color: black;
   position: absolute;
-  margin-left: 55%;
+  margin-left: 60%;
 }
 
 .button {

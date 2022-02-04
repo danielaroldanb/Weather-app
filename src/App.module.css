@@ -5,6 +5,16 @@
   left: 0;
 }
 
+.link{
+  background-color: green;
+  display: flex;
+  position: relative;
+  bottom:0.5px;
+  right: -10rem;
+  margin: 10rem 40rem;
+
+}
+
 .bkg {
   width: 100vw;
   height: 100vh;

@@ -1,20 +1,94 @@
 .social {
   display: flex;
   position: relative;
-  top: 30rem;
+  /* top: 50rem; */
   justify-content: center;
-  right: 4rem;
+  /* right: 4rem; */
 }
 
 .description {
-  display: flex;
-  height: 25vh;
-  width: 20rem;
-  border: solid black 2px;
-  justify-content: center;
-  position: absolute;
-  backdrop-filter: blur(70px);
-  top: 10rem;
-  right:40%;
+  font-size: large;
   color: white;
+  border: solid transparent;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  position: relative;
+  justify-content: center;
+  left: 30vw;
+  height: 30vh;
+  top: 20vh;
+  backdrop-filter: blur(80px) saturate(300%);
+  text-align: center;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(233, 233, 233, 0.767);
+  transition: 0.3s;
+}
+.btn {
+  display: flex;
+  position: relative;
+  top: 0.5rem;
+  right: -70rem;
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn:main,
+.btn:focus {
+  user-select: auto;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.btn:disabled {
+  cursor: auto;
+}
+
+.btn:active:after {
+  border-width: 0 0 0px;
+}
+
+.btn:active {
+  padding-bottom: 10px;
 }
