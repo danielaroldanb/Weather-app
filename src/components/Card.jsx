@@ -1,16 +1,17 @@
 import React from "react";
 import CardTemp from "./CardTemp";
 import styles from "./Card.module.css";
+import { Link } from "react-router-dom";
 
-export default function Card({ max, min, name, img, onClose, primary }) {
+export default function Card({ max, min, name, img, onClose, primary,cityId }) {
   function handleOnclose() {
     if (typeof onClose === "function") onClose();
   }
 
   return (
     <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
-      <span className={styles.name}>
-        {name} {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}
+      <span>   <Link to={`/city/${cityId}`} className={styles.name}>
+        {name} </Link> {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}
       </span>
 
       <img

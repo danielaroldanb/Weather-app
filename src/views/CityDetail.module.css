@@ -1,0 +1,16 @@
+.city {
+  color: black;
+  font-size: larger;
+}
+
+.info {
+  display: flex;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+.info > label {
+  margin-right: 0.5rem;
+}

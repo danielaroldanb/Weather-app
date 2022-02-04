@@ -4,8 +4,9 @@ import styles from "./App.module.css";
 import { useState } from "react";
 import fetchCity from "./controllers/fetch.js";
 import fetchCoords from "./controllers/fetchLocation.js";
-
 import Cities from "./views/Cities";
+import CityDetail from "./views/CityDetail";
+import About from "./views/About";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,9 +36,11 @@ function App() {
     <div className={styles.app}>
       <div className={styles.bkg} />
       <div className={styles.container}>
+ 
         <Routes>
           <Route
-            path="/" exact
+            path="/"
+            exact
             element={
               <Cities
                 data={data}
@@ -45,7 +48,10 @@ function App() {
                 handleOnClose={handleOnClose}
               />
             }
-          ></Route>
+          />
+
+          <Route path="/city/:id" element={<CityDetail />} />
+          <Route path="/about" exact element={<About />} />
         </Routes>
       </div>
     </div>
