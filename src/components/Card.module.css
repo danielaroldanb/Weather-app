@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 95%;
   color: #ffffff;
-  height: 98%;
+  height: 90%;
+  padding-top: 2%;
 
 }
 
