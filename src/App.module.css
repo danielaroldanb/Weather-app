@@ -1,36 +1,26 @@
 .app {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.link{
-  background-color: green;
-  display: flex;
-  position: relative;
-  bottom:0.5px;
-  right: -10rem;
-  margin: 10rem 40rem;
-
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
 }
 
 .bkg {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   backdrop-filter: blur(15px);
 }
 
 .container {
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 10vw;
-  top: 0;
+  width: 80%;
+  height: 80%;
+  margin: 5% 10%;
+  top: 0%;
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 1.5%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 53vh 25vh;
+  /* grid-template-rows: 53vh 25vh; */
 }
 
 .app,
@@ -41,10 +31,9 @@
   position: absolute;
 }
 
-
 .button {
   display: flex;
-  position: relative;
+  position: absolute;
   top: 0.5rem;
   right: -70rem;
   appearance: button;
@@ -56,14 +45,10 @@
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 20px;
   margin: 0;
   outline: none;
   overflow: visible;
-  padding: 8px 19px;
   text-align: center;
   text-transform: uppercase;
   touch-action: manipulation;
@@ -110,4 +95,3 @@
 .button:active {
   padding-bottom: 10px;
 }
-

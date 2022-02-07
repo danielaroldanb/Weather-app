@@ -1,9 +1,8 @@
 .social {
   display: flex;
   position: relative;
-  /* top: 50rem; */
   justify-content: center;
-  /* right: 4rem; */
+
 }
 
 .description {
@@ -12,12 +11,12 @@
   border: solid transparent;
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 30%;
   position: relative;
   justify-content: center;
-  left: 30vw;
-  height: 30vh;
-  top: 20vh;
+  left: 35%;
+  height: 40%;
+  top: 25%;
   backdrop-filter: blur(80px) saturate(300%);
   text-align: center;
   border-radius: 5%;
@@ -27,8 +26,8 @@
 .btn {
   display: flex;
   position: relative;
-  top: 0.5rem;
-  right: -70rem;
+  top: 1%;
+  right: -90%;
   appearance: button;
   background-color: #1899d6;
   border: solid transparent;

@@ -3,16 +3,17 @@
     background-color: #ffffff60;
     display: flex;
     justify-content: space-between;
-    height: 26vh;
-    backdrop-filter: blur(7px);
-    position: relative;
-    bottom: -21rem;
+    height: 33%;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
     
   }
   
   .emptyContainer {
     display: flex;
     justify-content: space-between;
-    height: 25vh;
+    height: 30%;
    
   }

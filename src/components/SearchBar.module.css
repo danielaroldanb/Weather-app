@@ -1,8 +1,8 @@
 .btn {
   align-items: center;
-  width: 4rem;
-  height: 2.4rem;
-  font-size: 1.6rem;
+  width: 5%;
+  height: 10%;
+  font-size: 2rem;
   color: #fff;
   background-color:#1899d6;
   border: none;
@@ -45,9 +45,9 @@
 
 .btn1 {
   display: flex;
-  position: relative;
-  top: -1rem;
-  right: -46rem;
+  position: absolute;
+  top: 2%;
+  left: 90%;
   appearance: button;
   background-color: #0c9239;
   border: solid transparent;
