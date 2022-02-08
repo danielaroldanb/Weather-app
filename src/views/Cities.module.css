@@ -3,10 +3,10 @@
     background-color: #ffffff60;
     display: flex;
     justify-content: space-between;
-    height: 40%;
+    height: 43%;
     backdrop-filter: blur(8px);
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: 100%;
     
   }
