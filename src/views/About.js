@@ -12,9 +12,9 @@ export default function About() {
         Go back
       </button>
       <div className={styles.description}>
-        Weather Application made with React.js and Javascript. This is a
-        personal project built for learning purposes. The data was obtained from
-        a free API (openweathermap).
+        Responsive Weather Application made with React.js and Javascript. This
+        is a personal project built for learning purposes. The data was obtained
+        from a free API (openweathermap).
         <div className={styles.social}>
           <a href="https://www.linkedin.com/in/daniela-roldan/">
             <AiFillLinkedin size="4.5rem" color="black" />

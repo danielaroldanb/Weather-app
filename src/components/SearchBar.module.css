@@ -117,6 +117,9 @@
     margin-top: 10%;
     width: 15%;
     height: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .input {
