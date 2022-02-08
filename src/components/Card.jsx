@@ -8,7 +8,10 @@ export default function Card({ max, min, name, img, onClose, primary,cityId }) {
     if (typeof onClose === "function") onClose();
   }
 
+
   return (
+
+  
     <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
       <span   className={styles.name}>
         {name} {!primary && <button className={styles.btn} onClick={handleOnclose}>X</button>}

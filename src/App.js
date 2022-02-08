@@ -12,11 +12,21 @@ function App() {
   const [data, setData] = useState([]);
 
   function onSearch(city) {
-    if (data.length > 4) {
-      alert("You can see maximum 5 cities");
+
+      var mediaqueryList = window.matchMedia("(max-width: 576px)");
+  if(mediaqueryList.matches) {
+    if (data.length > 1) {
+      alert("You can see maximum 2 cities");
     } else {
       fetchCity(city, setData);
     }
+  }
+  else{    if (data.length > 3) {
+    alert("You can see maximum 4 cities");
+  } else {
+    fetchCity(city, setData);
+  }}
+
   }
 
   function handleOnClose(id) {

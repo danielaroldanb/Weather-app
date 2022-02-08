@@ -95,3 +95,50 @@
 .button:active {
   padding-bottom: 10px;
 }
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0% 0%;
+    top: 0%;
+  }
+
+  .app,
+  .container {
+    background-image: url("./assets/startscreen.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+  }
+
+  .button {
+    display: flex;
+    position: absolute;
+    top: 0.5rem;
+    right: -70rem;
+    appearance: button;
+    background-color: #1899d6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+}

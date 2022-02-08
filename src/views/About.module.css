@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   justify-content: center;
-
 }
 
 .description {
@@ -90,4 +89,21 @@
 
 .btn:active {
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .description {
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    left: 10%;
+    height: 65%;
+    top: 15%;
+  }
+  .btn {
+    display: flex;
+    position: relative;
+    top: 1%;
+    right: -70%;
+  }
 }

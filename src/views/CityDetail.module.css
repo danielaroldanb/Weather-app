@@ -7,10 +7,9 @@
   color: #3498db;
   font-weight: 800;
   margin-top: 0.5%;
-  margin-bottom: 1% ;
+  margin-bottom: 1%;
   text-align: center;
   font-size: larger;
-  
 }
 .info {
   display: flex;
@@ -116,4 +115,17 @@
 
 .button:active {
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .detail {
+    width: 87%;
+    left:7%;
+    height: 65%;
+    top: 15%;
+  }
+
+  .button {
+    right: -70%;
+  }
 }
